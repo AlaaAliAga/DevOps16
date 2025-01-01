@@ -47,6 +47,14 @@ services:
       - prometheus
     networks:
       - app-network
+  cadvisor:
+    image: google/cadvisor
+    container_name: cadvisor
+    ports:
+      - "8081:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
 
 networks:
   app-network:

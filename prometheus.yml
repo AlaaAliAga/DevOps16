@@ -9,3 +9,8 @@ scrape_configs:
   - job_name: 'frontend'
     static_configs:
       - targets: ['frontend:3000']
+  
+  - job_name: 'docker'
+    static_configs:
+      - targets: ['cadvisor:8080']  # This tells Prometheus to scrape metrics from cAdvisor
+
