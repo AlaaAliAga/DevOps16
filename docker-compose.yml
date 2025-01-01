@@ -40,7 +40,7 @@ services:
   grafana:
     image: grafana/grafana
     ports:
-      - "3001:3000"
+      - "3001:3002"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
     depends_on:
