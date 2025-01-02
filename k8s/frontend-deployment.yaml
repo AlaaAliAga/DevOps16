@@ -16,7 +16,7 @@ spec:
       - name: frontend
         image: frontendimage
         ports:
-        - containerPort: 3000
+        - containerPort: 3001
         envFrom:
         - configMapRef:
             name: app-config
