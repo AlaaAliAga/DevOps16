@@ -41,7 +41,7 @@ services:
   grafana:
     image: grafana/grafana
     ports:
-      - "4000:3000"
+      - "4000:3100"
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
